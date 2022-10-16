@@ -7,7 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FirstSpringProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstSpringProjectApplication.class, args);
+		BinarySearch search = new BinarySearch(new QuickSort());
+		int []arr = {1,2,3};
+		int out = search.find(arr, 0);
+		System.out.println(out);
+		//SpringApplication.run(FirstSpringProjectApplication.class, args);
 	}
 
 }
